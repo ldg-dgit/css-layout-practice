@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+  }
+  
+  /* 기본 방향은 row(가로)이다. Default : horizontal is main axis / cross axis is vertical
+  justify content는 자식의 main axis 정렬을 뜻함.
+  align item은 cross axis 방향을 움직이는 것

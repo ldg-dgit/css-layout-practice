@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+      grid-template:
+      [header-start] "header header header header" 1fr /*height*/ [header-end]
+      [content-start] "content content content nav" 2fr [content-end]
+      [footer-start] "footer footer footer footer" 1fr [footer-end] /*이름*/ / 1fr 1fr 1fr 1fr /*width of which column (repeat 사용 불가)*/
+      ;
+  }
+  
+  .header {
+    background-color: rgb(82, 236, 149);
+    grid-area: header;
+  }
+  
+  .content {
+    background-color: aqua;
+    grid-area: content;
+  }
+  
+  .nav {
+    background-color: brown;
+    grid-area: nav;
+  }
+  
+  .footer {
+    background-color: coral;
+    grid-area: footer;
+  }
+  
+  /*
+  fr덕분에 크기가 변해도 비율 유지
+  naming은 필요할때만 쓰고
+  앞 뒤 둘다에 쓰던가, 앞에만 혹은 뒤에만 쓰던가 맘대로

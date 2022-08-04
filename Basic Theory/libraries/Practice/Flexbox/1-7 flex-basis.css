@@ -1,0 +1,25 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 100vh;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  
+  .child {
+    flex-basis: 200px;
+    background-color: palegreen;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*
+  flex-basis는 child에게 쓰는 것.
+  실제 크기가 아니라 그냥 처음 크기. 찌그러지거나 늘어나기 전에 처음 크기이다.
+  flex basis는 main axis에서 이다. 그래서 여기서는 width만. (flex-direction이 row이기 때문에.)
+  flex-direction이 column이면 height이다.
+  
+  

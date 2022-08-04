@@ -1,0 +1,25 @@
+.parent {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  
+  .child {
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+  }
+  
+  .child:nth-child(2){
+    order: 2;
+    align-self: center;
+  }
+  
+  .child:nth-child(3){
+    order: 1;
+    align-self: flex-end;
+  }
+  
+  /*
+  box의 기본 order는 0
+  html을 안바꾸고 순서를 수정할 수 있다.

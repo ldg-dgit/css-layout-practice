@@ -1,0 +1,27 @@
+.parent {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    height: 100vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .child {
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /*
+  flexbox는 무조건 한줄에 유지하도록 한다. 설정한 width가 줄어들더라도.
+  
+  flex-wrap: nowrap; -> 무슨 일이 있어도 이 element들은 같은 줄에 있어야 한다고 flexbox에게 말하는 것. 기본값이다.
+  flex-wrap: wrap; -> child 크기 유지
+  flex-direction: row-reverse; -> 순서 반대로
+  align-content -> line을 변경한다. cross-axis에 있는 line

@@ -1,0 +1,11 @@
+body {
+    display: flex;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+  }
+  
+  /* flexbox는 바로 위 부모가 flex여야 한다. 상위가. 최상위든 이런거 안되고 무조건 상위만 가능하다.

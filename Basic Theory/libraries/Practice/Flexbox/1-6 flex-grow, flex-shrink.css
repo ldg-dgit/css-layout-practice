@@ -1,0 +1,42 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 100vh;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  
+  .child {
+    width: 200px;
+    height: 200px;
+    background-color: palegreen;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .child:nth-child(2) {
+    background-color: black;
+    color: aliceblue;
+    flex-shrink: 2;
+    flex-grow: 2;
+  }
+  
+  .child:nth-child(3) {
+    flex-grow: 3;
+  }
+  
+  /*
+  flex-shrink child에게 적용됨
+  flex가 쥐어짜질때에 element의 행동을 정의함
+  nowrap은 모두 줄어듬
+  flex-shlink : 1 ->이게 기본값
+  flex-shrink: 2; -> 다른 것들보다 2배 더 줄어든다.
+  
+  flex-grow는 반대로 얼마나 더 커질지.
+  0이 기본 값이다.
+  만약 더 큰게 생기면 그게 남은 공간을 다 차지함. (나머지가 0이고, 하나만 1이면 그게 빈 공간을 모두 차지.)
+  
+  useful at responsible design

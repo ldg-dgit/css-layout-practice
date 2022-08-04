@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  /* grid-auto-rows: 100px; */ /*설정한 그리드보다 아이템이 많으면 자동으로 이 값으로 설정함*/
+  grid-auto-flow: column; /*설정한 것보다 많아지면 자동으로 column을 늘림*/
+  grid-auto-columns: 100px;
+}
+
+.item:nth-child(odd) {
+  background-color: rgb(82, 236, 149);
+}
+
+.item:nth-child(even) {
+  background-color: rgb(236, 82, 120);
+}
